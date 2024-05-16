@@ -6,12 +6,12 @@ import CBC from './Components/CBC';
 import Navbar from './Components/Navbar';
 import Textform from './Components/Textform';
 import Alert from './Components/Alert';
-import {
+{/*import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link
-} from "react-router-dom";
+} from "react-router-dom";*/}
 
 
 function App() {
@@ -49,25 +49,25 @@ function App() {
   }
   return (
     <>
-   <Router>
+   {/*<Router>*/}
     
 <Navbar title={title} mode={mode} toggleMode={toggleMode}/>
 <Alert alert={alert}/>
   <div className='container' style={{color:mode==='dark'?'white':'black'}}>
   
-   <Routes>
+  {/* <Routes>
           <Route path="/about"
             element = {<About />} />
-          </Routes>
+  </Routes>
           <Routes>
-          <Route path="/"element=
-          {<Textform  ShowAlert={ShowAlert} heading = "enter text to visualise" mode={mode}/>}/>
-          </Routes>
+              <Route path="/"element=
+            {<Textform  ShowAlert={ShowAlert} heading = "enter text to visualise" mode={mode}/>}/>
+          </Routes>*/}
       
 <h1 >welcome to Textutils</h1>
-
+<Textform  ShowAlert={ShowAlert} heading = "enter text to visualise" mode={mode}/>
 </div>
-</Router>
+{/*</Router>*/}
  </>);
 }
 
